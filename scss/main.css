@@ -160,7 +160,8 @@ body {
 }
 .wrapper .for__who-inner-blocks {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 50px;
 }
 .wrapper .for__who-inner-blocks-block {
@@ -249,7 +250,7 @@ body {
   line-height: normal;
 }
 .wrapper .about-inner-blocks-block.right .about-inner-blocks-block-img {
-  background: url(/img/about.png) no-repeat;
+  background: url('../img/about.png') no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -288,17 +289,21 @@ body {
 .wrapper .program-body {
   margin-top: 60px;
 }
+/* 
 .wrapper .program-body-blocks {
-  display: grid;
-  grid-template-columns: 1fr;
+display: flex;
+flex-direction: column;
   gap: 30px;
 }
 .wrapper .program-body-blocks-block {
   border-radius: 10px;
   background: #FFF;
   display: flex;
+  height: max-content;
 }
 .wrapper .program-body-blocks-block-title {
+  width: max-content;
+  white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -314,16 +319,22 @@ body {
   line-height: normal;
 }
 .wrapper .program-body-blocks-block-description {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-left: 25px;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 25px;
   color: #000;
   font-family: Inter;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.wrapper .program-body-blocks-block-description-row{
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
 }
 .wrapper .program-body-blocks-block-full {
   border-radius: 10px;
@@ -339,6 +350,19 @@ body {
   padding: 32px;
   text-align: center;
 }
+.wrapper .program-body-blocks-block-description ul{
+  margin: 0;
+}
+.wrapper .program-body-blocks-block-description .tick{
+  width: 25px;
+  max-width: 25px;
+  min-height: 25px;
+  cursor: pointer;
+}
+.wrapper .active{
+  flex-direction: column;
+  height: max-content;
+} */
 .wrapper .give {
   width: 100%;
   padding-top: 60px;
