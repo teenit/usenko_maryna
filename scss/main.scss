@@ -319,8 +319,10 @@ body {
                 &-block {
                     border-radius: 10px;
                     background: #FFF;
-                    display: grid;
+                    display: flex;
                     grid-template-columns: max-content 1fr;
+                    width: 100%;
+                    box-sizing: border-box;
                     &-title {
                         display: flex;
                         align-items: center;
@@ -335,6 +337,9 @@ body {
                         font-style: normal;
                         font-weight: 700;
                         line-height: normal;
+                        & span {
+                            white-space: nowrap;
+                        }
                     }
                     &-description {
                         display: flex;
@@ -359,12 +364,23 @@ body {
                                 display: flex;
                                 gap: 8px;
                                 align-items: center;
+                               
+                                &:hover {
+                                    .program-list-wrap-ico {
+                                        background: -webkit-linear-gradient(#fff700, $main-color);
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                        transition: all .3s;
+                                        
+                                    }
+                                    
+                                }
                                 &-ico {
                                     display: flex;
                                     align-items: center;
                                     font-size: 20px;
                                     padding-top: 4px;
-                                    background: -webkit-linear-gradient(#fff700, $main-color);
+                                    background: -webkit-linear-gradient($main-color, $main-color);
                                     -webkit-background-clip: text;
                                     -webkit-text-fill-color: transparent;
                                 }

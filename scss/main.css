@@ -296,8 +296,10 @@ body {
 .wrapper .program-body-blocks-block {
   border-radius: 10px;
   background: #FFF;
-  display: grid;
+  display: flex;
   grid-template-columns: max-content 1fr;
+  width: 100%;
+  box-sizing: border-box;
 }
 .wrapper .program-body-blocks-block-title {
   display: flex;
@@ -313,6 +315,9 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+.wrapper .program-body-blocks-block-title span {
+  white-space: nowrap;
 }
 .wrapper .program-body-blocks-block-description {
   display: flex;
@@ -340,12 +345,18 @@ body {
   gap: 8px;
   align-items: center;
 }
+.wrapper .program-body-blocks-block-description .program-list-wrap:hover .program-list-wrap-ico {
+  background: -webkit-linear-gradient(#fff700, rgb(178, 109, 205));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s;
+}
 .wrapper .program-body-blocks-block-description .program-list-wrap-ico {
   display: flex;
   align-items: center;
   font-size: 20px;
   padding-top: 4px;
-  background: -webkit-linear-gradient(#fff700, rgb(178, 109, 205));
+  background: -webkit-linear-gradient(rgb(178, 109, 205), rgb(178, 109, 205));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
