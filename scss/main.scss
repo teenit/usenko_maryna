@@ -24,7 +24,9 @@ body {
 .wrapper {
     width: 80%;
     margin: auto;
-
+    &.mr100{
+        margin-top: 100px;
+    }
     .header__menu {
         width: 100%;
         height: 75px;
@@ -310,11 +312,11 @@ body {
 
                     &.right {
                         .about-inner-blocks-block-img {
-                            background: url(/img/about.png) no-repeat;
+                            background: url(/img/pic2.jpg) no-repeat;
                             background-size: cover;
                             height: 100%;
                             width: 100%;
-                            background-position: center;
+                            background-position: top;
                             border-radius: 8px;
                         }
                     }
@@ -507,6 +509,9 @@ body {
                         line-height: normal;
                         padding: 32px;
                         text-align: center;
+                        & i {
+                            color: $main-color;
+                        }
                     }
                 }
             }
@@ -856,7 +861,36 @@ body {
             }
         }
     }
-
+}
+.numbers {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 25px 10px;
+    background: linear-gradient(180deg, rgba(#fff, 1) 0%, rgba(#fff, 1) 100%);
+    margin-top: 100px;
+    margin-bottom: 100px;
+    &-wrap {
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat(5,20%);
+        &-number {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            &-ico {
+                font-size: 60px;
+                background: -webkit-linear-gradient($gragient-second-color, $main-color);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+            &-text {
+                font-size: 20px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+        }
+    }
 }
 .modal__active{
     display: flex;
