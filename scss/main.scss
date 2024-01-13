@@ -319,7 +319,8 @@ body {
                 &-block {
                     border-radius: 10px;
                     background: #FFF;
-                    display: flex;
+                    display: grid;
+                    grid-template-columns: max-content 1fr;
                     &-title {
                         display: flex;
                         align-items: center;
@@ -338,14 +339,49 @@ body {
                     &-description {
                         display: flex;
                         align-items: center;
-                        justify-content: center;
-                        padding-left: 25px;
+                        justify-content: left;
+                        padding: 10px 10px 10px 25px;
                         color: #000;
                         font-family: Inter;
                         font-size: 18px;
                         font-style: normal;
                         font-weight: 700;
                         line-height: normal;
+                        flex-direction: column;
+                        .program-list {
+                            display: none;
+                            text-align: left;
+                            width: 100%;
+                            padding: 10px 0;
+                            gap: 8px;
+                            grid-template-columns: 1fr;
+                            &-wrap {
+                                display: flex;
+                                gap: 8px;
+                                align-items: center;
+                                &-ico {
+                                    display: flex;
+                                    align-items: center;
+                                    font-size: 20px;
+                                    padding-top: 4px;
+                                    background: -webkit-linear-gradient(#fff700, $main-color);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                }
+                            }
+                        }
+                        &.active {
+                            .program-list {
+                                display: grid;
+                            }
+                        }
+                        &-row {
+                            display: grid;
+                            grid-template-columns: 1fr 40px;
+                            align-items: center;
+                            justify-content: left;
+                            height: 100%;
+                        }
                     }
                     &-full {
                         border-radius: 10px;
