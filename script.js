@@ -19,3 +19,17 @@ document.getElementById("sendForm").addEventListener("submit", function(event) {
     })
     .catch(error => console.error("Fail:", error));
 });
+function showModal(){
+    var modal = document.getElementById("modal__form")
+    modal.classList.toggle("modal__active")
+}
+// function setFormData(){
+//     var obj = {
+//         name:"",
+//         phone:""
+//     }
+//     obj.name = document.getElementById("name").value
+//     obj.phone = document.getElementById("phone").value
+//     console.log(obj);
+    
+// }

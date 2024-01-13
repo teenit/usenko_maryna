@@ -51,8 +51,9 @@
                             </div>
                         </div>
                         <div class="btn">
-                            <a href="#" class="btn__link">Приєднатися</a>
+                            <a href="#" class="btn__link" onclick="showModal()">Приєднатися</a>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col__2">
@@ -72,7 +73,7 @@
                 <div class="for__who-inner-blocks">
                     <div class="for__who-inner-blocks-block">
                         <div class="for__who-inner-blocks-block-icon">
-                            <img src="img/for-who1.svg" alt="">
+                            <img src="img/for-who3.svg" alt="">
                         </div>
                         <div class="for__who-inner-blocks-block-content">
                             <p>Для жінок, що готові зустрітися з собою та прийняти себе в нових реаліях </p>
@@ -80,10 +81,10 @@
                     </div>
                     <div class="for__who-inner-blocks-block">
                         <div class="for__who-inner-blocks-block-icon">
-                            <img src="img/for-who1.svg" alt="">
+                            <img src="img/for-who4.svg" alt="">
                         </div>
                         <div class="for__who-inner-blocks-block-content">
-                            <p>Для тих, кому набридла апатія і жалість до себе</p>
+                            <p>Для тих, хто загубив себе і бажає знайти</p>
                         </div>
                     </div>
                     <div class="for__who-inner-blocks-block">
@@ -96,7 +97,7 @@
                     </div>
                     <div class="for__who-inner-blocks-block">
                         <div class="for__who-inner-blocks-block-icon">
-                            <img src="img/for-who3.svg" alt="">
+                            <img src="img/for-who1.svg" alt="">
                         </div>
                         <div class="for__who-inner-blocks-block-content">
                             <p>Для тих, хто бажає відключитися від Его і підключитися до душі. </p>
@@ -125,7 +126,7 @@
                     </div>
                 </div>
                 <div class="container">
-                    <button class="btn">Дізнатись більше</button>
+                    <button class="btn" onclick="showModal()">Дізнатись більше</button>
                 </div>
                 
             </div>
@@ -154,6 +155,35 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="packs">
+            <h1>Пакети</h1>               
+                <div class="packs-inner-cards">
+                    <div class="packs-inner-cards-card">
+                        <h3>Я сама</h3>
+                        <p>Доступ до всіх модулів, домашніх завдань та спілкування в групі учасниць</p>
+                    <div class="packs-inner-cards-card-bottom">
+                        <h3>65 $/ 260 zl/ 2600 грн</h3>
+                        <button class="btn" onclick="showModal()">Приєднатися</button>
+                    </div>
+                    </div>
+                    <div class="packs-inner-cards-card">
+                        <h3>Ми разом</h3>
+                        <p>Доступ до всіх модулів, домашніх завдань,  спілкування в групі учасниць, зворотній звʼязок від мене та відповіді на Ваші запитання, що виникатимуть протягом навчання</p>
+                    <div class="packs-inner-cards-card-bottom">
+                        <h3>110$ /440 zl/ 4400грн</h3>
+                        <button class="btn" onclick="showModal()">Приєднатися</button>
+                    </div>
+                    </div>
+                    <div class="packs-inner-cards-card">
+                        <h3>За руку</h3>
+                        <p>Доступ до всіх модулів, домашніх завдань,  спілкування в групі учасниць, зворотній звʼязок від мене та відповіді на Ваші запитання, що виникатимуть протягом навчання, моя індивідуальна консультація</p>
+                    <div class="packs-inner-cards-card-bottom">
+                        <h3>300$ /1230 zl/ 12000 грн</h3>
+                        <button class="btn" onclick="showModal()">Приєднатися</button>
+                    </div>
+                    </div>
+                </div>
         </div>
         <div class="program">
             <div class="program-header">
@@ -197,7 +227,27 @@
                             <div class="program-body-blocks-block-description-row">
                                 <span>Робота з тілом та клітинами. Нейропрактика: центросоми та простір здоровʼя. </span>
                                 <div class="tick" onclick="showList(1)">
-                                    <img src="./img/icons8-галочка.svg" alt="">
+                                    <i class="fi-rr-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="program-list">
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Нейромедитація 2</div>
+                                </div>
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Тест на обмеження</div>
+                                </div>
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Комплекс вправ на зняття спазмів</div>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +260,21 @@
                             <div class="program-body-blocks-block-description-row">
                                 <span>Фільтрація емоцій та природа їх виникнення. Баланс кортизолу в організмі, хімічна біологія. </span>
                                 <div class="tick" onclick="showList(2)">
-                                    <img src="./img/icons8-галочка.svg" alt="">
+                                    <i class="fi-rr-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="program-list">
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Біоенергетична практика 1</div>
+                                </div>
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Біоенергетична практика 2</div>
                                 </div>
                             </div>
                         </div>
@@ -223,7 +287,21 @@
                             <div class="program-body-blocks-block-description-row">
                                 <span>Ваш внутрішній голос та вміння чути себе.</span>
                                 <div class="tick" onclick="showList(3)">
-                                    <img src="./img/icons8-галочка.svg" alt="">
+                                    <i class="fi-rr-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="program-list">
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Нейромедитація 3</div>
+                                </div>
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Практична робота: Вибори в щоденному житті через контакт з собою</div>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +314,27 @@
                             <div class="program-body-blocks-block-description-row">
                                 <span> Як сексуальність повʼязана з цілісністю.</span>
                                 <div class="tick" onclick="showList(4)">
-                                    <img src="./img/icons8-галочка.svg" alt="">
+                                    <i class="fi-rr-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="program-list">
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Біоенергетична практика 3</div>
+                                </div>
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Нейромедитація 4</div>
+                                </div>
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Біоенергетична практика 4</div>
                                 </div>
                             </div>
                         </div>
@@ -249,14 +347,27 @@
                             <div class="program-body-blocks-block-description-row">
                                 <span>Питання-відповіді 1 година. </span>
                                 <div class="tick" onclick="showList(5)">
-                                    <img src="./img/icons8-галочка.svg" alt="">
+                                    <i class="fi-rr-angle-down"></i>
+                                </div>
+                            </div>
+                            <div class="program-list">
+                                <div class="program-list-wrap">
+                                    <div class="program-list-wrap-ico">
+                                        <i class="fi-rr-bulb"></i>
+                                    </div>
+                                    <div class="program-list-wrap-text">Секретний подарунок.</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="program-body-blocks-block">
                         <div class="program-body-blocks-block-full">
-                            <span>Плюс 5 нейропрактик, 4 практичних робіт, та 4 біоенергетичних практики та щоденні домашні завдання в закритій групі телеграм </span>
+                            <span>2 тижні. 
+                                4 відео уроки. 
+                                4 нейропрактики. 
+                                4 практичних робіт. 
+                                4 Біоенергетичних методики.
+                                Щоденна робота в групі телеграм: спілкування з однодумицями та отримання відповідей на запитання від мене. </span>
                         </div>
                     </div>
                 </div>
@@ -267,7 +378,7 @@
                 <span>Долучіться до нас у подорожі до жіночої сили та успіху!</span>
             </div>
             <div class="give-btn">
-                <button class="btn">Реєстрація</button>
+                <button class="btn" onclick="showModal()">Реєстрація</button>
             </div>
         </div>
     </div>
@@ -315,7 +426,7 @@
             <span>Copyright 2023</span>
         </div>
     </footer>
-    <div class="callback">
+    <div class="callback" onclick="showModal()">
         <div class="callback-with"></div>
         <div class="callback-without"></div>
         <div class="callback-container">
@@ -327,5 +438,25 @@
     <div class="form">
 
     </div>
+    <form action="" id="sendForm">
+    <div class="modal__form" id="modal__form">
+        <div class="modal__form-inner">
+            <div class="modal__form-inner-cross-wrap" onclick="showModal()">
+                <img src="img/cross-small.svg" alt="">
+            </div>
+            <h2>Приєднатися до тренінгу</h2>
+            <p>Заповніть форму нижче і ми зв'яжемося з Вами протягом доби.</p>
+            <div class="modal__form-inner-input">
+                <p>Прізвище та ім'я</p>
+                <input type="text" id="name" onchange="setFormData()">
+            </div>
+            <div class="modal__form-inner-input">
+                <p>Номер телефону</p>
+                <input type="number" id="phone" onchange="setFormData()">
+            </div>
+            <button class="btn" onclick="showModal()">Приєднатися</button>
+        </div>
+    </div>
+</form>
 </body>
 </html>
