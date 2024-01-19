@@ -57,6 +57,25 @@ body {
   gap: 25px;
   align-items: center;
 }
+.wrapper .header__menu .info .icon {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.wrapper .header__menu .info .icon a {
+  display: block;
+  height: 30px;
+  border-radius: 50%;
+}
+.wrapper .header__menu .info .icon a:hover {
+  background-color: rgba(150, 110, 183, 0.2862745098);
+}
+.wrapper .header__menu .info .icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
 .wrapper .header__menu .info .phone__wrap {
   display: flex;
   gap: 6px;

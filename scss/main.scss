@@ -67,6 +67,29 @@ body {
                 gap: 25px;
                 align-items: center;
             }
+            .icon {
+                width: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                &:hover {
+                  //  background-color: #966eb749;
+                }
+                a {
+                    display: block;
+                    height: 30px;
+                    
+                    border-radius: 50%;
+                    &:hover {
+                        background-color: #966eb749;
+                    }
+                }
+                img {
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
 
             .phone__wrap {
                 display: flex;
