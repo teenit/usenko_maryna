@@ -23,6 +23,10 @@ function showModal(){
     var modal = document.getElementById("modal__form")
     modal.classList.toggle("modal__active")
 }
+function openmenu(){
+    var modal = document.getElementById("mobileMenu")
+    modal.classList.toggle("active")
+}
 // function setFormData(){
 //     var obj = {
 //         name:"",

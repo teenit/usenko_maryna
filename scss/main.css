@@ -964,7 +964,111 @@ body {
   z-index: 0;
 }
 
+.menu {
+  position: absolute;
+  right: 15px;
+  top: 26px;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+.menu-btn {
+  width: 30px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.menu-btn-line {
+  height: 3px;
+  width: 100%;
+  background-color: #231F20;
+  position: absolute;
+}
+.menu-btn-line.s1 {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.menu-btn-line.s2 {
+  top: 50%;
+  right: 0;
+  width: 60%;
+  transform: translateY(-50%);
+}
+.menu-btn-line.s3 {
+  top: 50%;
+  right: 0;
+  width: 60%;
+  transform: translateY(-50%);
+}
+.menu-btn-line.s4 {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.menu-content {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 10px 20px;
+  background-color: rgba(150, 110, 183, 0.6666666667);
+  border-radius: 10px;
+  display: none;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.menu-content-phone a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-content-social {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu-content-social .icon {
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.menu-content-social .icon a {
+  display: block;
+  height: 30px;
+  border-radius: 50%;
+}
+.menu-content-social .icon a:hover {
+  background-color: rgba(150, 110, 183, 0.2862745098);
+}
+.menu-content-social .icon img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.menu.active .menu-content {
+  display: grid;
+}
+.menu.active .s1, .menu.active .s4 {
+  opacity: 0;
+}
+.menu.active .s2 {
+  width: 100%;
+  transition: all 0.3s;
+  transform: translateY(-50%) rotate(45deg);
+}
+.menu.active .s3 {
+  width: 100%;
+  transition: all 0.3s;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
 @media screen and (max-width: 700px) {
+  .menu {
+    display: block;
+  }
   .wrapper .packs-inner-cards {
     grid-template-columns: 1fr;
   }
@@ -1102,8 +1206,8 @@ body {
     width: 50px;
     height: 50px;
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 30px;
+    right: 15px;
     background: url(/img/logo-copy.svg) no-repeat;
     background-size: 100%;
   }
